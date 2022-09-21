@@ -1,0 +1,68 @@
+html, body {
+    background-color: #fafafa;
+  }
+  
+  body {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+  }
+  
+  .root {
+    max-width: 800px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fafafa;
+    border: "2px solid #000";
+    box-shadow: 5px 5px 5px 5px lightgray;
+  }
+  
+  .root form {
+    border:0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-auto-rows: 1fr;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    grid-gap:2rem;
+    align-items: stretch;
+  }
+  
+  
+  .root :is(button, input, select, textarea) {
+    margin:0;
+    text-align: center;
+    font-weight: 600;
+    border:0;
+  }
+  
+  .root :is(button, input, select, textarea):focus {
+    outline-color: black;
+  }
+  
+  .root input {
+    width: 150px;
+    font-size: 2rem;
+  }
+  
+  .root select {
+    background: none;
+    border:0;
+    padding: 1rem;
+  }
+  
+  .root form > * {
+    background: lightgray;
+    margin: 0;
+    appearance: none;
+    display: grid;
+    align-content: center;
+  }
